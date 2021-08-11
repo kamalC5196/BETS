@@ -167,7 +167,7 @@ var g1;
     document.addEventListener("DOMContentLoaded", function(event) {
         g1 = new JustGage({
             id: "g1",
-            value: "45",
+            value: "0",
             min: 0,
             max: 100,
             donut: true,
@@ -189,7 +189,7 @@ var g1;
     
         g2 = new JustGage({
             id: "g2",
-            value: "52",
+            value: "0",
             min: 0,
             max: 100,
             donut: true,
@@ -211,7 +211,7 @@ var g1;
     
         g3 = new JustGage({
             id: "g3",
-            value: "38",
+            value: "0",
             min: 0,
             max: 100,
             donut: true,
@@ -233,7 +233,7 @@ var g1;
     
         g4 = new JustGage({
             id: "g4",
-            value: "48",
+            value: "0",
             min: 0,
             max: 100,
             donut: true,
@@ -249,5 +249,13 @@ var g1;
 },
 		    hideInnerShadow: false
         });
+
+setInterval(function(){
+  g1.refresh(getRandomInt(0,55));
+  g2.refresh(getRandomInt(0,55));
+  g3.refresh(getRandomInt(0,55));
+  g4.refresh(getRandomInt(0,55));
+},3000)
+
 });
   
