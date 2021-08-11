@@ -251,11 +251,11 @@ var g1;
         });
 
 setInterval(function(){
-  g1.refresh(getRandomInt(0,55));
-  g2.refresh(getRandomInt(0,55));
-  g3.refresh(getRandomInt(0,55));
-  g4.refresh(getRandomInt(0,55));
-},3000)
+  g1.refresh(getRandomInt(40,55));
+  g2.refresh(getRandomInt(50,55));
+  g3.refresh(getRandomInt(30,40));
+  g4.refresh(getRandomInt(25,40));
+},5000)
 
 });
   
